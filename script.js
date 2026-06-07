@@ -58,3 +58,14 @@ cells.forEach(cell => {
     });
 
 });
+resetBtn.addEventListener("click", () => {
+
+    cells.forEach(cell => {
+        cell.textContent = "";
+    });
+
+    currentPlayer = "X";
+    gameActive = true;
+    statusText.textContent = "Player X's Turn";
+
+});
